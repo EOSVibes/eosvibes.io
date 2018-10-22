@@ -94,7 +94,7 @@ a:hover {
 }
 
 .our-contrib img{
-	padding: 80px 40px 20px 40px;
+	padding: 80px 40px 0px 40px;
 	width: calc(100% - 160px);
 }
 .our-contrib h4{
