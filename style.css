@@ -12,6 +12,43 @@ body {
 	overflow: hidden;
 	font-family: 'Work Sans', sans-serif;
 }
+#popup {
+	position: absolute;
+	top:0px;
+	left:0;
+	bottom: 0;
+	width: 100%;	
+	overflow: scroll;
+	z-index: 2;
+	text-align: center;
+	background: rgba(0, 0, 0,.6);
+
+}
+.popup-wpr{
+	width: 75vw;
+	margin: 43px auto;
+	position: relative;
+}
+#popup img.infographic {
+	width: 100%;
+	border-radius: 4px;
+	box-shadow: 0px 0px 2px 2px #555;
+}
+.close-popup{
+	position: fixed;
+	padding: 10px;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+}
+.our-contrib{
+	cursor: pointer;
+}
+.p-2{
+	padding: 11px;
+	width: 130px !important;
+	height: 130px !important;
+}
 
 a {
 	color: #3ecf8e;
@@ -49,6 +86,21 @@ a:hover {
 	right: 0;
 	bottom: 0;
 	z-index: 1;
+}
+.our-contrib{
+	text-align: center;
+	display: block;
+	position: relative;
+}
+
+.our-contrib img{
+	padding: 80px 40px 20px 40px;
+	width: calc(100% - 160px);
+}
+.our-contrib h4{
+	text-align: center;
+	color: #fff;
+	text-transform: uppercase;
 }
 
 .our-dapp .background {
@@ -611,17 +663,16 @@ hr {
 }
 
 .member {
-	width: 33%;
-	float: left;
+	width: 33%;	
 	display: flex;
 	justify-content: center;
-	margin-bottom: 80px;
+	margin-bottom: 50px;
 }
 
 .member h3 {
 	font-size: 18px;
 	font-weight: bold;
-	margin-top: 168px;
+	margin-top: 15px;
 	margin-bottom: 0;
 	line-height: 26px;
 }
@@ -660,7 +711,8 @@ hr {
 
 .members {
 	padding-top: 40px;
-	float: left;
+	display: flex;
+	clear:both;
 }
 
 .picture {
@@ -679,11 +731,21 @@ hr {
 	border: 2px solid #ffffff;
 	transition: border 0.4s linear;
 	position: relative;
-	float: left;
 	display: block;
 }
 
-.picture-wrapper:hover {
+.bhc {
+	width: 132px !important;
+	height: 132px !important;
+	padding: 7px !important;
+}
+.bhc .picture{
+	width: 132px !important;
+	height: 132px !important;
+}
+
+
+.picture-wrapper:hover, .border-green {
 	border: 2px solid #3ecf8e;
 	transition: border 0.5s linear;
 }
@@ -857,7 +919,7 @@ hr {
 	}
 	.left-side .content {
 		position: relative;
-		min-height: 357px;
+		min-height: 390px;
 	}
 	.video-desc {
 		margin-bottom: 170px;
@@ -1048,6 +1110,8 @@ ul, .table-row, .caption {
 		left: -10px;
 		right: auto;
 	}
+
+	
 }
 
 @media (max-width: 470px) {
@@ -1067,6 +1131,18 @@ ul, .table-row, .caption {
 	.member .popup, .member:nth-child(2n) .popup, .member:nth-child(3n) .popup {
 		left: -85px;
 		right: auto;
+	}
+	
+	h1 {
+		font-size: 1.2rem;
+  }
+	.our-contrib img {
+		padding: 10px 0 0 0px;
+		width: calc(100% - 40px);
+	}
+	.our-contrib h4 {
+		font-size: 12px;
+		margin: 0;
 	}
 }
 

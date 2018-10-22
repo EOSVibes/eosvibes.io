@@ -1,4 +1,22 @@
 $(document).ready(function () {
+	$(".our-contrib").on('click', function(e){
+		e.preventDefault()
+		
+		var img = '<img class="infographic" src="https://eosvibes.io/img/infographic.jpg" />'
+		var close = '<img title="close" class="close-popup" src="img/close-24.png" />'
+		var elem = $('#popup')
+		if(elem.length) {
+			elem.show()
+			return
+		}
+		$('body').append('<div id="popup"><div class="popup-wpr">'+close + img+'</div></div>')
+	})
+
+	$('body').on('click', '#popup img.close-popup', function(e) {
+		e.preventDefault()
+		$('#popup').hide();
+	})
+
 	$(".burger").on('click', function(e) {
 		$(".menu").addClass( "show" );
 	});
